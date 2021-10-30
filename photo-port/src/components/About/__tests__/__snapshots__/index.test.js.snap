@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <section
+    class="my-5"
+  >
+    <h1
+      id="about"
+    >
+      Who am I?
+    </h1>
+    <img
+      alt="cover"
+      class="my-2"
+      src="Mountains.jpeg"
+      style="width: 100%;"
+    />
+    <div
+      class="my-2"
+    >
+      <p>
+        I am a Phtographer enthusiast, starting with Black and White Photography back in 2005. I have I learned the art of Photography with the use with film and a SLR, and have matured using a DSLR. I continue to enjoy film Photography but now get into more of the digital work. I hope you enjoy my Art!
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
