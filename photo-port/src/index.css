@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+    background: var(--dark);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -101,10 +105,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-header {
-  background: var(--dark);
 }
 
 header a {
