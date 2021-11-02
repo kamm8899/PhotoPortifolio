@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+const [contactSelected, setContactSelected] = useState(false);
 import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
@@ -20,14 +21,22 @@ function App() {
   return (
     <div>
       <Nav
+  
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        <Gallery currentCategory={currentCategory}></Gallery>
-        <About></About>
-        <ContactForm></ContactForm>
+      if(!contactSelected) {
+  <>
+    <Gallery currentCategory={currentCategory}></Gallery>
+    <About></About>
+  </> 
+  } else {
+    <ContactForm></ContactForm>
+}
       </main>
     </div>
   );
